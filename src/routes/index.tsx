@@ -117,7 +117,7 @@ function Home() {
   return (
     <SiteLayout>
       {/* Exact Hero Section from Image */}
-      <section className="relative w-full h-[600px] overflow-hidden bg-[#0f172a]">
+      <section className="relative w-full h-[600px] lg:h-[700px] overflow-hidden bg-[#0f172a]">
         {/* Full Background Image */}
         <div className="absolute inset-0 z-0">
           <img 
@@ -126,6 +126,8 @@ function Home() {
             className="w-full h-full object-cover object-center"
           />
         </div>
+          {/* Elegant Dark gradient for text readability without blocking the image */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/60 to-black/5"></div>
 
         {/* Right Edge Call for Papers Tab */}
         <Link to="/conferences/call-for-papers" className="absolute right-0 top-[20%] z-30 bg-[#d97706] text-white py-4 px-2 rounded-l-md font-bold text-sm tracking-widest writing-mode-vertical hover:bg-[#b45309] transition-colors shadow-lg" style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}>
@@ -134,7 +136,7 @@ function Home() {
 
         {/* Left Dark Blue Overlay Box */}
         <div className="relative z-10 container-page h-full flex items-center">
-          <div className="w-full max-w-[500px] bg-[#0f172a]/95 backdrop-blur-sm p-8 md:p-10 rounded-tr-[40px] rounded-br-[10px] rounded-tl-[10px] rounded-bl-[10px] shadow-2xl relative overflow-hidden">
+          <div className="w-full max-w-[650px] bg-transparent p-6 md:p-10 md:pt-16 relative z-10">
             
             {/* Green top-left corner accent to mimic image's swoosh from header (optional, but requested exactness so we focus on the box content) */}
             
@@ -149,33 +151,33 @@ function Home() {
             <div className="text-[11.5px] md:text-[13px] font-bold tracking-[0.15em] text-white/90 uppercase mb-4 leading-relaxed">
               European Journal of Aerospace, Aviation and Maritime Spectrum Studies
             </div>
-            <h1 className="font-serif text-4xl md:text-[42px] font-bold leading-[1.1] text-white mb-4">
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-[56px] leading-[1.15] font-bold leading-[1.1] text-white mb-4">
               Aerospace, <br />
               <span className="text-[#f59e0b]">Aviation, Maritime</span> <br />
               and Spectrum Studies
             </h1>
             
-            <p className="text-white/90 text-[15px] leading-relaxed mb-8 max-w-sm">
+            <p className="text-white/90 text-[15px] leading-relaxed mb-8 max-w-lg md:text-[17px]">
               Advancing global transport, space exploration, and maritime sciences.
             </p>
             
             <div className="flex flex-wrap gap-4 mb-10">
               <Link
                 to="/current-issue"
-                className="bg-[#f59e0b] hover:bg-[#c2984b] text-[#0f172a] font-medium text-sm px-6 py-2.5 rounded-sm transition-colors"
+                className="bg-[#f59e0b] hover:brightness-110 text-[#0f172a] font-bold text-[15px] px-8 py-3.5 rounded-full transition-all shadow-[0_4px_14px_0_rgba(0,0,0,0.3)] hover:shadow-[0_6px_20px_rgba(255,255,255,0.15)] hover:-translate-y-0.5"
               >
                 Explore Research
               </Link>
               <Link
                 to="/submit"
-                className="bg-transparent border border-[#f59e0b] text-[#f59e0b] hover:bg-[#f59e0b]/10 font-medium text-sm px-6 py-2.5 rounded-sm transition-colors"
+                className="bg-transparent border-2 border-[#f59e0b] text-[#f59e0b] hover:bg-[#f59e0b]/10 font-bold text-[15px] px-8 py-3.5 rounded-full transition-all hover:-translate-y-0.5"
               >
                 Submit Manuscript
               </Link>
             </div>
 
             {/* Icons List */}
-            <div className="space-y-4">
+            <div className="space-y-4 max-w-[320px]">
               <div className="flex items-center gap-4">
                 <div className="w-6 flex justify-center"><Stamp className="h-5 w-5 text-[#f59e0b]" /></div>
                 <span className="text-white font-medium text-sm tracking-wider uppercase whitespace-nowrap">AEROSPACE</span>
