@@ -146,6 +146,9 @@ function Home() {
               <div className="w-2 h-2 bg-[#f59e0b]"></div>
             </div>
             
+            <div className="text-[11.5px] md:text-[13px] font-bold tracking-[0.15em] text-white/90 uppercase mb-4 leading-relaxed">
+              European Journal of Aerospace, Aviation and Maritime Spectrum Studies
+            </div>
             <h1 className="font-serif text-4xl md:text-[42px] font-bold leading-[1.1] text-white mb-4">
               Aerospace, <br />
               <span className="text-[#f59e0b]">Aviation, Maritime</span> <br />

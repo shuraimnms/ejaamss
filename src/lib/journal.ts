@@ -3,7 +3,7 @@
 // Nav structure mirrors the EJAAMSS policy document's site map.
 
 export const JOURNAL = {
-  name: "International Journal of Academic Research in Aerospace & Maritime",
+  name: "European Journal of Aerospace, Aviation and Maritime Spectrum Studies",
   short: "EJAAMSS",
   tagline:
     "A Peer-Reviewed, Open Access International Journal for High-Quality Research in Aerospace Engineering, Aviation, Maritime Technology, Naval Architecture, Transportation, UAVs and Allied Disciplines.",
