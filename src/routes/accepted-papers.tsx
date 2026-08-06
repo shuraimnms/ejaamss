@@ -6,7 +6,11 @@ export const Route = createFileRoute("/accepted-papers")({
   head: () => ({
     meta: [
       { title: "Accepted Papers — EJAAMSS" },
-      { name: "description", content: "Manuscripts accepted for publication at EJAAMSS and entering the production pipeline." },
+      {
+        name: "description",
+        content:
+          "Manuscripts accepted for publication at EJAAMSS and entering the production pipeline.",
+      },
       { property: "og:title", content: "Accepted Papers — EJAAMSS" },
       { property: "og:description", content: "Editorially accepted EJAAMSS manuscripts." },
     ],

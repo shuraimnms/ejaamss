@@ -5,17 +5,35 @@ import { Breadcrumbs } from "@/components/site/breadcrumbs";
 import { FAQSection } from "@/components/site/faq-section";
 import { CtaStrip } from "@/components/site/cta-strip";
 import {
-  Landmark, LineChart, Megaphone, Users2, Building2, Package,
-  Cpu, Lightbulb, Scale, GraduationCap, FlaskConical, Layers,
+  Landmark,
+  LineChart,
+  Megaphone,
+  Users2,
+  Building2,
+  Package,
+  Cpu,
+  Lightbulb,
+  Scale,
+  GraduationCap,
+  FlaskConical,
+  Layers,
 } from "lucide-react";
 
 export const Route = createFileRoute("/aims-scope")({
   head: () => ({
     meta: [
       { title: "Focus & Scope — EJAAMSS" },
-      { name: "description", content: "EJAAMSS publishes original research across aerospace engineering, aviation science, maritime technology, naval architecture, transportation systems, intelligent mobility, and allied disciplines." },
+      {
+        name: "description",
+        content:
+          "EJAAMSS publishes original research across aerospace engineering, aviation science, maritime technology, naval architecture, transportation systems, intelligent mobility, and allied disciplines.",
+      },
       { property: "og:title", content: "Focus & Scope — EJAAMSS" },
-      { property: "og:description", content: "Subject areas, methodological standards, and manuscript types accepted by EJAAMSS." },
+      {
+        property: "og:description",
+        content:
+          "Subject areas, methodological standards, and manuscript types accepted by EJAAMSS.",
+      },
     ],
     links: [{ rel: "canonical", href: "/aims-scope" }],
   }),
@@ -23,14 +41,46 @@ export const Route = createFileRoute("/aims-scope")({
 });
 
 const AREAS = [
-  { icon: Cpu, title: "Aerospace Engineering", body: "Aerodynamics, flight dynamics and control, aerospace structures and materials, propulsion systems, astrodynamics, space systems engineering, computational fluid dynamics (CFD), aeroelasticity, avionics, thermodynamics, acoustics, and structural mechanics." },
-  { icon: Building2, title: "Aviation Science & Operations", body: "Air traffic management (ATM), airport planning and design, aviation safety and security, human factors in aviation, airline operations and management, aviation meteorology, air transport economics, crew resource management, and unmanned aerial systems (UAS)." },
-  { icon: Landmark, title: "Maritime Technology & Engineering", body: "Naval architecture, marine engineering, offshore structures, ship design and hydrodynamics, marine propulsion, marine materials and corrosion, underwater acoustics, subsea engineering, ocean engineering, and autonomous surface ships (MASS)." },
-  { icon: Package, title: "Transportation Systems & Logistics", body: "Multimodal transportation, intelligent transportation systems (ITS), supply chain and logistics management, transport economics and policy, public transit systems, railway engineering, traffic engineering, freight transport, and urban mobility." },
-  { icon: LineChart, title: "Intelligent Mobility & Autonomous Systems", body: "Autonomous vehicles, connected vehicles (V2X), drone delivery systems, smart port operations, machine learning in transportation, sensor fusion, navigation and guidance systems, robotics in aerospace and marine applications, and autonomous vessel routing." },
-  { icon: Lightbulb, title: "Sustainable Transportation & Energy", body: "Alternative fuels, electric and hybrid propulsion (aerospace and marine), emission reduction technologies, sustainable aviation fuel (SAF), green ports and shipping, energy-efficient routing, environmental impact of transportation, and lifecycle assessment." },
-  { icon: Scale, title: "Safety, Security & Human Factors", body: "Risk assessment and management, safety management systems (SMS), cybersecurity in transportation, human-machine interface (HMI), accident investigation and reconstruction, ergonomic design, maritime safety regulations, and emergency response planning." },
-  { icon: FlaskConical, title: "Emerging Technologies", body: "Advanced materials (composites, nanomaterials), 3D printing in manufacturing, digital twins in aerospace and maritime, Internet of Things (IoT) in transport, blockchain for logistics, quantum computing applications, and space exploration technologies." },
+  {
+    icon: Cpu,
+    title: "Aerospace Engineering",
+    body: "Aerodynamics, flight dynamics and control, aerospace structures and materials, propulsion systems, astrodynamics, space systems engineering, computational fluid dynamics (CFD), aeroelasticity, avionics, thermodynamics, acoustics, and structural mechanics.",
+  },
+  {
+    icon: Building2,
+    title: "Aviation Science & Operations",
+    body: "Air traffic management (ATM), airport planning and design, aviation safety and security, human factors in aviation, airline operations and management, aviation meteorology, air transport economics, crew resource management, and unmanned aerial systems (UAS).",
+  },
+  {
+    icon: Landmark,
+    title: "Maritime Technology & Engineering",
+    body: "Naval architecture, marine engineering, offshore structures, ship design and hydrodynamics, marine propulsion, marine materials and corrosion, underwater acoustics, subsea engineering, ocean engineering, and autonomous surface ships (MASS).",
+  },
+  {
+    icon: Package,
+    title: "Transportation Systems & Logistics",
+    body: "Multimodal transportation, intelligent transportation systems (ITS), supply chain and logistics management, transport economics and policy, public transit systems, railway engineering, traffic engineering, freight transport, and urban mobility.",
+  },
+  {
+    icon: LineChart,
+    title: "Intelligent Mobility & Autonomous Systems",
+    body: "Autonomous vehicles, connected vehicles (V2X), drone delivery systems, smart port operations, machine learning in transportation, sensor fusion, navigation and guidance systems, robotics in aerospace and marine applications, and autonomous vessel routing.",
+  },
+  {
+    icon: Lightbulb,
+    title: "Sustainable Transportation & Energy",
+    body: "Alternative fuels, electric and hybrid propulsion (aerospace and marine), emission reduction technologies, sustainable aviation fuel (SAF), green ports and shipping, energy-efficient routing, environmental impact of transportation, and lifecycle assessment.",
+  },
+  {
+    icon: Scale,
+    title: "Safety, Security & Human Factors",
+    body: "Risk assessment and management, safety management systems (SMS), cybersecurity in transportation, human-machine interface (HMI), accident investigation and reconstruction, ergonomic design, maritime safety regulations, and emergency response planning.",
+  },
+  {
+    icon: FlaskConical,
+    title: "Emerging Technologies",
+    body: "Advanced materials (composites, nanomaterials), 3D printing in manufacturing, digital twins in aerospace and maritime, Internet of Things (IoT) in transport, blockchain for logistics, quantum computing applications, and space exploration technologies.",
+  },
 ];
 
 const MANUSCRIPT_TYPES = [
@@ -45,10 +95,22 @@ const MANUSCRIPT_TYPES = [
 ];
 
 const FAQS = [
-  { q: "Do you accept qualitative research?", a: "Yes. EJAAMSS welcomes theoretical, empirical, conceptual, qualitative, quantitative and mixed-method studies that make a meaningful contribution." },
-  { q: "Are interdisciplinary papers welcome?", a: "Yes, provided the paper clearly establishes its connection with aerospace, maritime, or transportation and its academic, professional, policy, or societal value." },
-  { q: "Can I submit a case study?", a: "Yes. Case studies are one of the accepted manuscript categories alongside original research, reviews, technical notes, conceptual and theoretical papers, thesis notes, and book notes." },
-  { q: "Are country- or region-specific studies welcome?", a: "Absolutely — provided the findings are of broader theoretical, empirical, methodological, policy-based, or practical relevance." },
+  {
+    q: "Do you accept qualitative research?",
+    a: "Yes. EJAAMSS welcomes theoretical, empirical, conceptual, qualitative, quantitative and mixed-method studies that make a meaningful contribution.",
+  },
+  {
+    q: "Are interdisciplinary papers welcome?",
+    a: "Yes, provided the paper clearly establishes its connection with aerospace, maritime, or transportation and its academic, professional, policy, or societal value.",
+  },
+  {
+    q: "Can I submit a case study?",
+    a: "Yes. Case studies are one of the accepted manuscript categories alongside original research, reviews, technical notes, conceptual and theoretical papers, thesis notes, and book notes.",
+  },
+  {
+    q: "Are country- or region-specific studies welcome?",
+    a: "Absolutely — provided the findings are of broader theoretical, empirical, methodological, policy-based, or practical relevance.",
+  },
 ];
 
 function AimsScope() {
@@ -65,12 +127,18 @@ function AimsScope() {
         <section className="grid gap-8 lg:grid-cols-3">
           <aside className="lg:col-span-1">
             <div className="sticky top-24 rounded-2xl border border-border bg-card p-6">
-              <div className="text-xs uppercase tracking-[0.2em] text-brand font-semibold">Focus of the journal</div>
+              <div className="text-xs uppercase tracking-[0.2em] text-brand font-semibold">
+                Focus of the journal
+              </div>
               <p className="mt-2 font-serif text-lg leading-snug">
-                Theoretical and practice-oriented research that contributes to academic knowledge, professional understanding, institutional development, policy formulation, business decision-making, and contemporary managerial practices.
+                Theoretical and practice-oriented research that contributes to academic knowledge,
+                professional understanding, institutional development, policy formulation, business
+                decision-making, and contemporary managerial practices.
               </p>
               <div className="mt-6 rule-gold" />
-              <div className="mt-6 text-xs uppercase tracking-widest text-muted-foreground">Manuscripts accepted</div>
+              <div className="mt-6 text-xs uppercase tracking-widest text-muted-foreground">
+                Manuscripts accepted
+              </div>
               <ul className="mt-3 space-y-1.5 text-sm">
                 {MANUSCRIPT_TYPES.map((t) => (
                   <li key={t} className="flex items-start gap-2">
@@ -90,7 +158,10 @@ function AimsScope() {
             </p>
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
               {AREAS.map((a) => (
-                <article key={a.title} className="rounded-xl border border-border bg-card p-5 transition hover:border-brand/40 hover:shadow-elev">
+                <article
+                  key={a.title}
+                  className="rounded-xl border border-border bg-card p-5 transition hover:border-brand/40 hover:shadow-elev"
+                >
                   <div className="flex h-10 w-10 items-center justify-center rounded-md bg-brand-muted text-brand">
                     <a.icon className="h-5 w-5" />
                   </div>
@@ -106,7 +177,9 @@ function AimsScope() {
           <h2 className="font-serif text-2xl font-semibold">Scope disclaimer</h2>
           <div className="mt-2 rule-gold" />
           <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-            A manuscript must make a clear contribution to aerospace, aviation, maritime, transportation systems, or an allied discipline. Interdisciplinary papers may be considered when their connection with the journal's scope is adequately established.
+            A manuscript must make a clear contribution to aerospace, aviation, maritime,
+            transportation systems, or an allied discipline. Interdisciplinary papers may be
+            considered when their connection with the journal's scope is adequately established.
           </p>
         </section>
 
