@@ -7,8 +7,8 @@ export const JOURNAL = {
   short: "EJAAMSS",
   tagline:
     "A Peer-Reviewed, Open Access International Journal for High-Quality Research in Aerospace Engineering, Aviation, Maritime Technology, Naval Architecture, Transportation, UAVs and Allied Disciplines.",
-  issn_online: "2395-6410",
-  issn_print: "2455-0116",
+  issn_online: "3142-9327",
+  issn_print: "",
   license: "Open Access",
   frequency: "Quarterly",
   founded: 2021,
